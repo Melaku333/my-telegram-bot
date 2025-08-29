@@ -25,7 +25,7 @@ async def webhook(req: Request):
     return {"ok": True}
 
 async def on_startup():
-    await bot.set_webhook(f"https://YOUR_RENDER_APP.onrender.com{WEBHOOK_PATH}")
+    await bot.set_webhook(f"https://my-telegram-bot-a86x.onrender.com{WEBHOOK_PATH}")
 
 @app.on_event("startup")
 async def startup():
