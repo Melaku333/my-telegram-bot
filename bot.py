@@ -3,7 +3,7 @@ from fastapi import FastAPI, Request
 import os
 import uvicorn
 
-BOT_TOKEN = os.getenv("8287463581:AAGmWgUUqPIcqXjT8MXjiVo4l8iOoLvyr7Q")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 WEBHOOK_PATH = f"/webhook/{BOT_TOKEN}"
 WEBAPP_HOST = "0.0.0.0"
 WEBAPP_PORT = int(os.environ.get("PORT", 8000))
